@@ -1,0 +1,7 @@
+Test is to create a list of dishes with prices. 
+Should be able to place orders for dishes in a list with quantities, it should
+raise an error if the sum is not correct. 
+If the order is correct the customer should be texted to tell them that their
+food will be delivered in one hour. 
+Use Twilio for the texting. 
+
