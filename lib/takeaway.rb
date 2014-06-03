@@ -21,4 +21,9 @@ class Takeaway
     @order.each { |dish| total << dish.price }
     total.inject { |sum,price| sum + price}
   end
+
+  def place_order(order,dish)
+    raise  "Incorrect order price" unless order.price == dish.price
+    puts "Order has been placed."
+  end
 end
