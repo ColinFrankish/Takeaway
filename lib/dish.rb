@@ -9,5 +9,8 @@ class Dish
     @price = price
   end
 
+  def price
+    @price
+  end
   
 end

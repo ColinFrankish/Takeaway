@@ -18,6 +18,8 @@ class Takeaway
   end
 
   def total_cost
-    @order.inject(0) { |name,price| name + price }
+    total = []
+    @order.each { |dish| total << dish.price }
+    total.inject { |sum,price| sum + price}
   end
 end
