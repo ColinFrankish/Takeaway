@@ -2,15 +2,11 @@
 
 class Dish
 
-  attr_accessor :name, :price# is there any need for this ?? 
+  attr_accessor :name, :price
 
   def initialize(name,price)
     @name = name
     @price = price
-  end
-
-  def price
-    @price
   end
   
 end

@@ -1,5 +1,4 @@
 require './lib/takeaway'
-#require './lib/dish'
 
 describe 'takeaway' do  
   let(:takeaway) {Takeaway.new}
@@ -22,6 +21,9 @@ describe 'takeaway' do
     takeaway.add_dish(dish)
     expect(takeaway.total_cost).to eq(23.98)
   end 
+  it 'should not allow an order to be placed if item not on menu' do
+
+  end
 
 end
 

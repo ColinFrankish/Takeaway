@@ -1,5 +1,4 @@
 #!usr/bin/ruby env
-require_relative 'dish'
 
 class Takeaway
 
