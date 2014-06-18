@@ -25,24 +25,11 @@ describe 'takeaway' do
   it 'should raise error if total cost is not correct' do
     takeaway.add_dish(dish)
     order = Dish.new("chicken",5.99) 
-    expect(takeaway.place_order(order,dish)).to raise_error
+    expect(takeaway.place_order(order,dish)).should raise_error(RuntimeError)
   end
-  # it 'should not allow an order to be placed if item not on menu' do
-
-  # end
+  
 
 end
 
 
-
-
-#it should be able to add up the sum of the orders
-
-# it should throw an error if the cost does not
-# add up.
-
-#  it should be able to text the customer one hour
-# before their delivery is due
-
-# 
 

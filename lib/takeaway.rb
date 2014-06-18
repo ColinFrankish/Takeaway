@@ -23,7 +23,12 @@ class Takeaway
   end
 
   def place_order(order,dish)
-    raise  "Incorrect order price" unless order.price == dish.price
+    if order.price != dish.price
+      raise RuntimeError, "Incorrect order price,please try again!"
+    else
+    @order << order
     puts "Order has been placed."
+    end
   end
+
 end
