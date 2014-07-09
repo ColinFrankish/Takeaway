@@ -1,4 +1,4 @@
-Test is to create a list of dishes with prices. 
+Project is to create a list of dishes with prices. 
 Should be able to place orders for dishes in a list with quantities.
  It should raise an error if the order price is incorrect.
 
@@ -6,7 +6,7 @@ It needs to be able to total the cost of the order.
 
 Dishes need to be added and removed from the menu.
 
-TDD should be used to test each scenario. 
+TDD should be used to test each scenario (Rspec). 
 
 
 
